@@ -1,0 +1,55 @@
+databaseChangeLog:
+  - changeSet:
+      id: orders
+      author: Orkhan Mirzayev
+      changes:
+        - createTable:
+            tableName: orders
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: product_link
+                  type: varchar(250)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: decimal(7,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: commission
+                  type: decimal(5,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: decimal(7,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_color
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_size
+                  type: varchar(150)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_description
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false

@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: roles
+      author: Orkhan Mirzayev
+      changes:
+        - createTable:
+            tableName: roles
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false

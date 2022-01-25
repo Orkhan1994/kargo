@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: packages
+      author: Orkhan Mirzayev
+      changes:
+        - createTable:
+            tableName: packages
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: tracking_id
+                  type: varchar(250)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: store
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: smart_custom_status
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_price
+                  type: decimal(7,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_weight
+                  type: decimal(7,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: delivery
+                  type: varchar(150)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: package_debt
+                  type: varchar(150)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false

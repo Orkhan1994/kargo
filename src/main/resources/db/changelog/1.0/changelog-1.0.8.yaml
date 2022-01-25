@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: stories
+      author: Orkhan Mirzayev
+      changes:
+        - createTable:
+            tableName: stories
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cashback
+                  type: varchar(30)
+                  constraints:
+                    nullable: false

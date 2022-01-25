@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: tariffs
+      author: Orkhan Mirzayev
+      changes:
+        - createTable:
+            tableName: tariffs
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: weight
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: value
+                  type: varchar(30)
+                  constraints:
+                    nullable: false

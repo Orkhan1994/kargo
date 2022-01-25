@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: about-us
+      author: Orkhan Mirzayev
+      changes:
+        - createTable:
+            tableName: about_us
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: description
+                  type: text
+                  constraints:
+                    nullable: false
