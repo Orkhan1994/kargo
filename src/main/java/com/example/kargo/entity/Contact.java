@@ -1,4 +1,4 @@
 package com.example.kargo.entity;
 
-public class Contacts {
+public class Contact {
 }

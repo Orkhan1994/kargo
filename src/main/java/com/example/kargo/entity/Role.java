@@ -1,4 +1,4 @@
 package com.example.kargo.entity;
 
-public class Roles {
+public class Role {
 }

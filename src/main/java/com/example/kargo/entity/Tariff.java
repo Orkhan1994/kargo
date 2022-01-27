@@ -1,4 +1,4 @@
 package com.example.kargo.entity;
 
-public class Packages {
+public class Tariff {
 }
